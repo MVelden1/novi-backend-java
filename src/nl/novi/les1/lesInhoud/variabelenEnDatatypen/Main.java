@@ -43,5 +43,13 @@ public class Main {
         } else {
             System.out.println("hij is niet waar");
         }
+
+        System.out.println(calculateSum(100, 200, 300));
+        int sum = calculateSum(500, 600, -300);
+        System.out.println("sum = " + sum);
+    }
+
+    public static int calculateSum(int x, int y, int z) {
+        return x + y + z;
     }
 }
