@@ -1,0 +1,71 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Java build output ###
+out/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*.log
+replay_pid*.log
+
+### Logs ###
+*.log
+
+### Secrets / lokale config ###
+.env
+.env.*
+*.local.properties
+src/main/resources/application-local.properties
+
+### Databases (lokale oefenbestanden) ###
+*.db
+*.sqlite
+*.sqlite3
+
+### Wil je net als in je Python-repo de hele IntelliJ-config negeren?
+### Zet dan de regel hieronder aan en verwijder het ### IntelliJ IDEA ###-blok bovenaan.
+# .idea/
