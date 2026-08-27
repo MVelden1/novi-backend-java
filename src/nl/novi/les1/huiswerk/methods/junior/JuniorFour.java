@@ -4,13 +4,13 @@ package nl.novi.les1.huiswerk.methods.junior;
  * Uitdagende opdracht!
  * Een stuk van de code is uitgecommentarieerd, omdat deze pas gaat werken, wanneer de methode doTransaction afgemaakt
  * is.
- *
+ * <p>
  * Maak doTransaction af. Deze moet twee waardes accepteren als input (bepaal zelf welke datatypes daarvoor logisch zijn).
  * - Één waarde is het banksaldo voor de transactie,
  * - de andere waarde is de waarde van de transactie.
- *
+ * <p>
  * De andere methodes (main(), deposit() en withdraw()) hoeven niet aangepast te worden.
- *
+ * <p>
  * Gebruik een if-statement om de logica van de methode op te schrijven:
  * - Wanneer de waarde van de transactie negatief is, gaat het om het opnemen (withdraw) van geld. Dan dient de withdraw
  * methode aangeroepen te worden.
@@ -20,12 +20,16 @@ package nl.novi.les1.huiswerk.methods.junior;
 
 public class JuniorFour {
     public static void main(String[] args) {
-        //doTransaction(1000, -200);
-        //doTransaction(123, 3445);
+        doTransaction(1000, -200);
+        doTransaction(123, 3445);
     }
 
-    public static void doTransaction() {
-
+    public static void doTransaction(int balance, int amount) {
+        if (amount > 0) {
+            deposit(balance, amount);
+        } else {
+            withdraw(balance, amount);
+        }
     }
 
     public static void deposit(int bankAccountBalance, int amount) {

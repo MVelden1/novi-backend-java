@@ -17,6 +17,8 @@ public class MediorThree {
     }
 
     public static void printName(String firstName, String lastName) {
+        firstName = firstLetterToUpperCase(firstName);
+        lastName = firstLetterToUpperCase(lastName);
         System.out.println("Naam: " + firstName + " " + lastName);
     }
 

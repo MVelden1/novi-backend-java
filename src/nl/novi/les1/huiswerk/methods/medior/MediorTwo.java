@@ -9,7 +9,11 @@ package nl.novi.les1.huiswerk.methods.medior;
 public class MediorTwo {
 
     public static void main(String[] args) {
-
+        if (isOldEnough(17)) {
+            printProceed();
+        } else {
+            printUnderAgeWarning();
+        }
     }
 
     public  static boolean isOldEnough(int age) {

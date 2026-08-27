@@ -6,4 +6,11 @@ package nl.novi.les1.huiswerk.methods.beginner;
  * Zorg ervoor dat de methode wordt aangeroepen en dat de tekst uitgeprint wordt.
  */
 public class BeginnerFive {
+    public static void main() {
+        start();
+    }
+
+    private static void start() {
+        System.out.println("Power on");
+    }
 }

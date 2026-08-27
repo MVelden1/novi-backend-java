@@ -21,6 +21,7 @@ public class JuniorOne {
     }
 
     public static void sayGoodbyeToName(String name) {
+        System.out.println("Goodbye " + name);
         // write your code here
     }
 }

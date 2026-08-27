@@ -11,12 +11,16 @@ package nl.novi.les1.huiswerk.methods.junior;
 
 public class JuniorThree {
     public static void main(String[] args) {
-
+        negativeNumberChecker(0);
+        negativeNumberChecker(5);
+        negativeNumberChecker(-5);
     }
 
     public static void negativeNumberChecker(int number) {
         if(number > 0) {
             System.out.println(number + " is een positief getal.");
+        } if (number == 0 ) {
+            System.out.println("Het getal is: " + number);
         } else {
             System.out.println(number + " is een negatief getal.");
         }

@@ -17,11 +17,19 @@ public class MediorOne {
     public static void main(String[] args) {
         int result = calculateSum(10, 22);
 
-        System.out.println("De som van 10 en 12 is: " + result);
+        System.out.println("De som van 10 en 22 is: " + result);
 
         int doubledResult = doubleNumber(result);
 
         System.out.println(result + " verdubbeld is: " + doubledResult);
+
+        int square = square(doubledResult);
+
+        System.out.println("Het kwadraat van " + doubledResult + " is: " + square);
+    }
+
+    private static int square(int number) {
+        return number * number;
     }
 
     public static int calculateSum(int firstNumber, int secondNumber) {
