@@ -40,7 +40,6 @@ replay_pid*.log
 .env
 .env.*
 !.env.example
-*.local.properties
 
 ### Databases (lokale oefenbestanden) ###
 *.db
