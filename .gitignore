@@ -1,12 +1,17 @@
-target/
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
+### Build output (IntelliJ build system) ###
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*.log
+replay_pid*.log
 
 ### IntelliJ IDEA ###
 .idea/
-*.iws
 *.iml
+*.iws
 *.ipr
 
 ### Eclipse ###
@@ -24,31 +29,9 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
-
-### Mac OS ###
-.DS_Store
-
-### Windows ###
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-### Java build output ###
-out/
-*.class
-*.jar
-*.war
-*.ear
-### Uitzondering: de Maven wrapper moet juist WEL mee (moet na *.jar staan)
-!.mvn/wrapper/maven-wrapper.jar
-hs_err_pid*.log
-replay_pid*.log
 
 ### Logs ###
 *.log
@@ -58,10 +41,16 @@ replay_pid*.log
 .env.*
 !.env.example
 *.local.properties
-src/main/resources/application-local.properties
 
 ### Databases (lokale oefenbestanden) ###
 *.db
 *.sqlite
 *.sqlite3
 
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Mac OS ###
+.DS_Store
