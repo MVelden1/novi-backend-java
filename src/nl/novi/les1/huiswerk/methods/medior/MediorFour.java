@@ -37,7 +37,7 @@ public class MediorFour {
 
         List<Integer> result = numberStringToArrayList("123123145");
         List<String> StringList = numberListToStringList(result);
-        printNumbers(StringList);
+        System.out.println(printNumbers(StringList));
 
     }
 
@@ -86,7 +86,7 @@ public class MediorFour {
         }
     }
 
-    public static void printNumbers(List<String> numberWords) {
+    public static StringBuilder printNumbers(List<String> numberWords) {
         StringBuilder wholeString = new StringBuilder();
 
         for (String numberWord : numberWords) {
@@ -96,7 +96,6 @@ public class MediorFour {
                 wholeString.append("-").append(numberWord);
             }
         }
-
-        System.out.println(wholeString);
+        return wholeString;
     }
 }
