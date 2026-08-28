@@ -19,7 +19,10 @@ import java.util.List;
 public class SeniorOne {
     public static void main(String[] args) {
         List<String> customerNames = fillCustomerNames();
-        capitalizeString(customerNames);
+        System.out.println("customerNames = " + customerNames);
+
+        capitalizeCustomerName(customerNames);
+        System.out.println("\ncustomerNames = " + customerNames);
     }
 
     private static List<String> fillCustomerNames() {
@@ -40,33 +43,34 @@ public class SeniorOne {
         return customerNames;
     }
 
-    private static void capitalizeString(List<String> customerNames) {
-        for (String customerName : customerNames) {
+    private static void capitalizeCustomerName(List<String> customerNames) {
+        for (int i = 0; i < customerNames.size(); i++) {
+            String customerName = customerNames.get(i);
             String[] nameParts = customerName.split(" ");
 
-            for (int i = 0; i < nameParts.length; i++) {
-                if (nameParts[i].equals("de")
-                        || nameParts[i].equals("den")
-                        || nameParts[i].equals("van")) {
+            for (int j = 0; j < nameParts.length; j++) {
+                if (nameParts[j].equals("de")
+                        || nameParts[j].equals("den")
+                        || nameParts[j].equals("van")) {
                     continue;
                 }
-                nameParts[i] = capitalizeWord(nameParts[i]);
+                nameParts[j] = capitalizeName(nameParts[j]);
             }
 
             String newCustomerName = String.join(" ", nameParts);
-            System.out.println("newCustomerName = " + newCustomerName);
+            customerNames.set(i, newCustomerName);
         }
     }
 
-    private static String capitalizeWord(String word) {
-        String[] hyphenParts  = word.split("-");
+    private static String capitalizeName(String word) {
+        String[] hyphenParts = word.split("-");
 
-        for (int j = 0; j < hyphenParts .length; j++) {
-            hyphenParts [j] = hyphenParts [j].substring(0, 1).toUpperCase()
-                    + hyphenParts [j].substring(1).toLowerCase();
+        for (int j = 0; j < hyphenParts.length; j++) {
+            hyphenParts[j] = hyphenParts[j].substring(0, 1).toUpperCase()
+                    + hyphenParts[j].substring(1).toLowerCase();
 
         }
 
-        return String.join("-", hyphenParts );
+        return String.join("-", hyphenParts);
     }
 }
