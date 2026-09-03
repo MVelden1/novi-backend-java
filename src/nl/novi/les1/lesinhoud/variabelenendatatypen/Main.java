@@ -1,4 +1,4 @@
-package nl.novi.les1.lesInhoud.variabelenEnDatatypen;
+package nl.novi.les1.lesinhoud.variabelenendatatypen;
 
 import java.util.Scanner;
 
