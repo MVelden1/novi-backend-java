@@ -2,13 +2,11 @@ package nl.novi.les2.voorbereiding.carclass;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
 
@@ -23,7 +21,7 @@ public class MainTest {
         outputStream = new ByteArrayOutputStream();
         printStream = new PrintStream(outputStream);
         System.setOut(printStream);
-        Main.main(new String[]{});
+        Main.main();
     }
 
     @AfterEach
@@ -37,7 +35,7 @@ public class MainTest {
 
         assertEquals(1, constructors, "Je Car class moet 1 constructor met 5 parameters hebben, maar heeft nu " + constructors + " constructors die 5 parameters hebben");
 
-        assertEquals(outputStream.toString(), "Deze Toyota Aygo is blauw" + System.lineSeparator() + "Deze Fiat 500 is groen" + System.lineSeparator() + "Deze Volvo CX90 is zwart" + System.lineSeparator());
+        assertEquals(outputStream.toString(), "This Toyota Aygo is blue." + System.lineSeparator() + "This Fiat 500 is green." + System.lineSeparator() + "This Volvo CX90 is black." + System.lineSeparator());
     }
 
 
