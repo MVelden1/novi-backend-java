@@ -25,7 +25,7 @@ als `huiswerk/if-else` heet hier dus `huiswerk/conditionals`.
 | Les | Onderwerp | Opdrachten |
 |---|---|---|
 | les1 | Variabelen, datatypen, methodes | `huiswerk/methods` (beginner t/m senior), `huiswerk/personalia` |
-| les2 | Klassen, objecten, if-statement | `lesinhoud/classes`, `huiswerk/classes`, `huiswerk/supermarkt` |
+| les2 | Klassen, objecten, if-statement | `voorbereiding/carclass`, `lesinhoud/classes`, `huiswerk/classes`, `huiswerk/supermarkt` |
 | les3 | nog leeg | |
 
 Opdrachtbeschrijvingen staan als `README.md` of `OPDRACHT.md` in de map van de
